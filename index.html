@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components Library</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/buttons.css">
+    <link rel="stylesheet" href="styles/components/modals.css">
+    <link rel="stylesheet" href="styles/components/accordions.css">
+</head>
+<body>
+
+    <h1>UI Components Library</h1>
+    <p>a collection of reusable UI components</p>
+
+    <div class="container">
+        <!-- Buttons Section -->
+        <!-- Buttons Section -->
+        <div class="component">
+            <h2>Buttons</h2>
+            <button class="btn" id="primaryBtn">Pop-Up Message</button>
+            <button class="btn" id="shakeBtn">Shake Buttons</button>
+            <button class="btn" id="nightLightBtn">Night Light Mode</button>
+        </div>
+
+
+        <!-- Modal Section -->
+        <div class="component">
+            <h2>Modal</h2>
+            <button class="btn" id="openModal">Open Modal</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Welcome to the UI Component Library!</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion Section -->
+        <!-- Accordion Section -->
+    <div class="component">
+        <h2>Accordion</h2>
+        <button class="accordion-btn">Section 1</button>
+        <div class="accordion-content">
+            <p>This is the content of Section 1.</p>
+        </div>
+        <button class="accordion-btn">Section 2</button>
+        <div class="accordion-content">
+            <p>This is the content of Section 2.</p>
+        </div>
+        <button class="accordion-btn">Section 3</button>
+        <div class="accordion-content">
+            <p>This is the content of Section 3.</p>
+        </div>
+    </div>
+
+    <script src="js/components/modals.js"></script>
+    <script src="js/components/accordions.js"></script>
+    <script src="js/components/buttons.js"></script>
+</body>
+</html>

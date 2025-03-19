@@ -1,0 +1,41 @@
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px; /* Fully rounded buttons */
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%; /* Consistent button width */
+    background: var(--primary-color);
+    color: white;
+    box-shadow: var(--box-shadow);
+    border: none;
+    transition: 0.3s ease;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    background: #244972;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark-mode h1,p{
+    color: white;
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out 3; /* Shake animation 3 times */
+}
+

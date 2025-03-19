@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #195b9e;
+    --background-color: #b5cdeb;
+    --text-color: #1A1A1A;
+    --border-radius: 20px;
+    --box-shadow: 5px 5px 15px rgba(36, 73, 114, 0.5);
+    --font-family: "Poppins", sans-serif;
+}
+
+.accordion-btn {
+    width: 85%;
+    padding: 16px;
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    margin: 12px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.accordion-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.03);
+}
+
+/* Add indicator for open accordion */
+.accordion-btn.active {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Hide accordion content initially */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 16px;
+    background: var(--background-color);
+    text-align: left;
+    border-left: 3px solid var(--primary-color);
+    border-radius: 0 0 10px 10px;
+}

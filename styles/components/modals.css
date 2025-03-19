@@ -1,0 +1,47 @@
+.modal {
+    display: flex; /* Flex to ensure positioning works */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); /* Start slightly smaller */
+    width: 280px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden; /* Hide by default */
+    pointer-events: none; /* Prevent interactions */
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* When modal is opened */
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translate(-50%, -50%) scale(1);
+    color: black;
+}
+
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    left: 15px; /* Move it to the left corner */
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    transition: transform 0.2s ease-in-out;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+}
+
+.close:hover {
+    transform: scale(1.2);
+}
